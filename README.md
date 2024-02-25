@@ -23,11 +23,11 @@ This script provides a robust solution for performing incremental backups on mos
 
 ## Installation
 
-Copy the backup_script.sh to your desired location.
+Copy the yarbs.sh to your desired location.files
 Make the script executable:
 
 ```
-chmod +x backup_script.sh
+chmod +x yarbs.sh
 ```
 
 ## Usage
@@ -48,7 +48,7 @@ chmod +x backup_script.sh
 To run the backup with default settings:
 
 ```
-./backup_script.sh
+./yarbs.sh
 ```
 
 ### Custom Options
@@ -56,31 +56,31 @@ To run the backup with default settings:
 Custom Source Directory:
 
 ```
-./backup_script.sh -s /path/to/your/source
+./yarbs.sh -s /path/to/your/source
 ```
 
 ### Custom Backup Directory:
 
 ```
-./backup_script.sh -b /path/to/backup/dir
+./yarbs.sh -b /path/to/backup/dir
 ```
 
 ### Skip Specific Paths:
 
 ```
-./backup_script.sh -p "/path/to/skip1 /path/to/skip2"
+./yarbs.sh -p "/path/to/skip1 /path/to/skip2"
 ```
 
 ### Skip Specific File Extensions:
 
 ```
-./backup_script.sh -e "ext1 ext2"
+./yarbs.sh -e "ext1 ext2"
 ```
 
 ### Perform Real Backup (Disable Dry Run):
 
 ```
-./backup_script.sh -d
+./yarbs.sh -d
 ```
 
 ### Using File Size Limit
@@ -88,7 +88,7 @@ Custom Source Directory:
 To exclude files larger than a certain size (e.g., 500 MB):
 
 ```
-./backup_script.sh -l 500
+./yarbs.sh -l 500
 ```
 **Note on File Size Limit**
 
@@ -103,5 +103,5 @@ Automation
 For automated backups, consider setting up a cron job to execute this script at regular intervals.
 
 ```
-0 * * * * /path/to/backup_script.sh
+0 * * * * /path/to/yarbs.sh
 ```
